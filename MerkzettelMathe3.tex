@@ -140,7 +140,8 @@
 	        \int x^{-1} dx &= \ln(|x|)+c\\
 	        \int \ln (x) dx &= x\ln(x)-x +c\\
 	        \int sin(x) dx &= -cos(x)+c\\
-	        \int cos(x) dx &= sin(x)+c
+	        \int cos(x) dx &= sin(x)+c\\
+	        \int tan(x) dx &= -\log\cos(x)+c
         \end{align*}
         \begin{align*}
         	\int cf(x) dx &= c \int f(x) dx\\
@@ -468,11 +469,11 @@
 					Für homogene DGL nehmen wir nur $y_1$
 			\subsubsection{Variation der Konstanten (inhomogen)}
 				Wenden wir an wenn wir die Variablen nicht geteilt bekommen:\\
-				$y'+b(x)\cdot y=0$ für $y_1$\\
-				$y'+b(x)\cdot y=a(x)$ für $y_2$\\
-
-				$y_1 = c\cdot e^{-\int b(x)dx}$\\
-				$y_2 = \int(a(x)e^{\int b(x)dx})dx\cdot e^{-\int b(x)dx}$\\
+				$y'+b(x)\cdot y=0$\\
+				$y = c\cdot e^{-\int b(x)dx}$\\
+				oder\\
+				$y'+b(x)\cdot y=a(x)$\\
+				$y = \int(a(x)e^{\int b(x)dx})dx\cdot e^{-\int b(x)dx}$\\
 
 				$y(x)=y_1+y_2$ = allgemeine Lösung
 			\subsection{Anfangswertproblem}
